@@ -11968,7 +11968,7 @@ body {
 }
 
 .section1 {
-  background-image: url("/pic/headerBackground.png");
+  background-image: url("/src/pic/headerBackground.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -12053,7 +12053,7 @@ body {
             transform: none;
   }
   .navbar-nav {
-    background: url("/pic/menu-tlo.png");
+    background: url("/src/pic/menu-tlo.png");
     background-size: cover;
     min-width: 840px;
   }
@@ -12061,7 +12061,7 @@ body {
     padding-left: 35px !important;
   }
   .navbar-item:first-child:hover {
-    background: url("/pic/tlo-menu.png") !important;
+    background: url("/src/pic/tlo-menu.png") !important;
     background-color: transparent !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -12203,7 +12203,7 @@ body {
 }
 
 .section2 {
-  background-image: url("/pic/section2_bgc.png");
+  background-image: url("/src/pic/section2_bgc.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12269,7 +12269,7 @@ body {
 }
 
 .pricelist {
-  background-image: url("/pic/pricelistBackground.jpg");
+  background-image: url("/src/pic/pricelistBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 100px;
@@ -12339,7 +12339,7 @@ body {
 }
 
 .form {
-  background-image: url("/pic/bgc-evaluate1.png");
+  background-image: url("/src/pic/bgc-evaluate1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -12509,7 +12509,7 @@ div.permission {
 }
 
 .realizations {
-  background-image: url("/pic/section6_bgc.png");
+  background-image: url("/src/pic/section6_bgc.png");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -12658,7 +12658,7 @@ div.permission {
 }
 
 section.footer {
-  background: url("/pic/section7.png");
+  background: url("/src/pic/section7.png");
   background-position: center;
   background-size: cover;
   padding: 70px 0 0;

@@ -1,5 +1,5 @@
 import './swipe.js';
-import './photos.js'
+import './photos.js';
 
 const box1 = document.querySelector('.boks-1');
 const box2 = document.querySelector('.boks-2');
