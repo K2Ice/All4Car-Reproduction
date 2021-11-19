@@ -1,0 +1,129 @@
+.form {
+    background-image: url('../pic/bgc-evaluate1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.addedImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.form [type="file"] {
+    display: none;
+}
+
+.form [type="file"]~label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed white;
+    border-radius: 10px;
+    flex-basis: 26%;
+    max-height: 90px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    height: 75px;
+}
+
+.form h4 {
+    transform: translateY(-200px);
+    opacity: 0;
+    transition: .4s;
+
+    &.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    >span {
+        font-size: 60px !important;
+        line-height: .9;
+    }
+}
+
+.form [type="file"]~label img {
+    max-width: 100%;
+    padding: 20px;
+    max-height: 100%;
+    min-width: 80%;
+    object-fit: contain;
+}
+
+.addedImg {
+    transition: 0.8s;
+    opacity: 0;
+    transform: translateY(-200px);
+
+    &.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.formular {
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateX(-200px);
+
+    &.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    &+div {
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(200px);
+
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+.formular input {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 20px 10px 5px 2px;
+    color: white;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: white;
+        font-size: 12px;
+    }
+}
+
+div.permission {
+    font-size: 12px;
+}
+
+@media (min-width: 960px) {
+    div.permission {
+        font-size: 16px;
+    }
+}
+
+.sendBtn {
+    background-color: transparent;
+    border: 2px solid red;
+    color: white;
+    transition: .2s;
+
+    &:hover {
+        background-color: red;
+    }
+}
+
+#permissionText {
+    text-align: justify;
+}

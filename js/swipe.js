@@ -1,4 +1,7 @@
-import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+import Swiper,{Navigation} from 'swiper';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
       
 const swiperProps = {
   loop: true,
@@ -41,5 +44,8 @@ const realizationProps = {
     prevEl: '#left-arrow1',
   },
 }
+
+Swiper.use([Navigation])
+
 new Swiper('.swiper', swiperProps)
 new Swiper('.realization-box', realizationProps)

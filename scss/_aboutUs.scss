@@ -1,0 +1,29 @@
+.section2 {
+    background-image: url('../pic/section2_bgc.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section2 h1 {
+    opacity: 0;
+    transition: .4s;
+    transform: translateX(-200px);
+}
+
+.section2 h1.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.section2 p {
+    opacity: 0;
+    transition: .4s;
+    transform: translateX(200px);
+}
+
+.section2 p.active {
+    opacity: 1;
+    transform: translateX(0);
+}

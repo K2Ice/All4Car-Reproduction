@@ -1,0 +1,146 @@
+section.footer {
+    background: url('../pic/section7.png');
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img[alt="join-us"] {
+    width: 100%;
+    max-width: 350px;
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(-200px);
+
+    &.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.socials {
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(200px);
+
+    &.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.socials div {
+    border: 2px solid red;
+}
+
+.socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.socials>div:hover {
+    background-color: red;
+}
+
+.hours {
+    min-width: 220px;
+    transition: .5s;
+    opacity: 0;
+    transform: translateX(-200px);
+
+    &.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.contact,
+.address {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.table-wrapper,
+.contact,
+.address {
+    padding-right: 15px;
+    border-right: 3px solid red;
+}
+
+.table-wrapper {
+    border-color: white;
+}
+
+.footerLogo {
+    transition: .5s;
+    opacity: 0;
+    transform: translateX(-200px);
+
+    &.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.invisibleBorder {
+    border-color: transparent;
+}
+
+table {
+    margin-left: auto;
+}
+
+tr {
+    font-size: 16px;
+}
+
+tr td:nth-child(1) {
+    text-align: right;
+    color: white;
+    padding-right: 10px;
+}
+
+tr td:nth-child(2) {
+    line-height: 1;
+    color: white;
+}
+
+tr:nth-child(odd) td:nth-child(2) {
+    color: red;
+    padding-left: 10px;
+}
+
+.footer-right {
+    background-color: #000;
+}
+
+.rights p {
+    margin: 0 auto;
+    text-align: justify;
+    width: 50%;
+    line-height: .9;
+}
+
+.rights img {
+    width: 100px;
+    padding: 10px;
+}
+
+.rights span {
+    line-height: 0.5;
+    font-size: 10px;
+}
