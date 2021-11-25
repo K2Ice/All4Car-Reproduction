@@ -1,7 +1,7 @@
 import Swiper,{Navigation} from 'swiper';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
+import 'swiper/scss';
+import 'swiper/scss/navigation';
       
 const swiperProps = {
   loop: true,
