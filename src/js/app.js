@@ -61,10 +61,15 @@ window.addEventListener('scroll', ()=>{
   const scrollWindow = window.scrollY;
   
   siteElements.forEach(item => {
-    // if(item.elementDOM.id === "aboutText") item.height = item.elementDOM.offsetTop + item.elementDOM.offsetHeight - window.innerHeight * 1.5;
-    // else item.height = item.elementDOM.offsetTop + item.elementDOM.offsetHeight - window.innerHeight;
 
-    item.height = item.elementDOM.offsetTop + item.elementDOM.offsetHeight - window.innerHeight * 1.40;
+    // if(item.elementDOM.classList.contains('boks-1') || item.elementDOM.classList.contains('boks-3')) item.height = item.elementDOM.offsetTop + item.elementDOM.offsetHeight - window.innerHeight * 1.1;
+    // else if(item.elementDOM.classList.contains('boks-2') || item.elementDOM.classList.contains('boks-4')) item.height = item.elementDOM.offsetTop + item.elementDOM.offsetHeight - window.innerHeight * 1.1;
+    
+    if(item.elementDOM.id === "aboutText" || item.elementDOM.classList.contains('hours')) item.height = item.elementDOM.offsetTop + item.elementDOM.offsetHeight - window.innerHeight * 2;    
+    // else item.height = item.elementDOM.offsetTop + item.elementDOM.offsetHeight - window.innerHeight * 1.7;
+
+    else item.height = item.elementDOM.offsetTop + item.elementDOM.offsetHeight - window.innerHeight * 1.1;
+
 
     if(scrollWindow > item.height && !item.isScrolled ){
       item.elementDOM.classList.add('active');
