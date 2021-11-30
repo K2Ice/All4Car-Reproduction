@@ -1,7 +1,7 @@
 import 'bootstrap';
 import './swipe.js';
 import './photos.js';
-import '../scss/index.scss'
+import '../scss/index.scss';
 
 const box1 = document.querySelector('.boks-1');
 const box2 = document.querySelector('.boks-2');
@@ -79,4 +79,13 @@ window.addEventListener('scroll', ()=>{
       item.isScrolled = false;
     }
   })
+})
+
+document.addEventListener('click', ()=>{
+  const menuBtn = document.querySelector('.navbar-toggler');
+  const menuCollapse = document.querySelector('.navbar-collapse');
+
+  if(menuBtn.style.display !== "none" && menuCollapse.classList.contains('show')){
+    menuBtn.click()
+  }
 })
